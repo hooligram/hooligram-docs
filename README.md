@@ -72,3 +72,39 @@ Server failure response
   "type": "VERIFICATION_SUBMIT_CODE_FAILURE"
 }
 ```
+
+### Authorization
+
+#### Sign in
+
+Client request
+
+```json
+{
+  "payload": {
+    "country_code": "<string>",
+    "phone_number": "<string>",
+    "verification_code": "<string>"
+  },
+  "type": "AUTHORIZATION_SIGN_IN_REQUEST"
+}
+```
+
+Server success response
+
+```json
+{
+  "payload": {
+  },
+  "type": "AUTHORIZATION_SIGN_IN_SUCCESS"
+}
+```
+
+```json
+{
+  "payload": {
+    "errors": ["<string>"]
+  },
+  "type": "AUTHORIZATION_SIGN_IN_FAILURE"
+}
+```

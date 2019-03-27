@@ -141,7 +141,7 @@ Server success response
 {
   "id": "<string>",
   "payload": {
-    "message_group_id": "<int>"
+    "group_id": "<int>"
   },
   "type": "GROUP_CREATE_SUCCESS"
 }

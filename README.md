@@ -158,3 +158,38 @@ Server failure response
   "type": "GROUP_CREATE_FAILURE"
 }
 ```
+
+#### Group add new member
+
+Client request
+
+```json
+{
+  "payload": {
+    "group_id": ["<int>"],
+    "member_sid": "<string>"
+  },
+  "type": "GROUP_ADD_MEMBER_REQUEST"
+}
+```
+
+Server success response
+
+```json
+{
+  "payload": {
+  },
+  "type": "GROUP_ADD_MEMBER_SUCCESS"
+}
+```
+
+Server failure response
+
+```json
+{
+  "payload": {
+    "errors": ["<string>"]
+  },
+  "type": "GROUP_ADD_MEMBER_FAILURE"
+}
+```

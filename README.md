@@ -118,9 +118,9 @@ Server success response
 }
 ```
 
-### Message group
+### Group
 
-#### Create message group
+#### Create group
 
 Client request
 
@@ -159,7 +159,41 @@ Server failure response
 }
 ```
 
-#### Group add new member
+#### Leave group
+
+Client request
+
+```json
+{
+  "payload": {
+    "group_id": ["<int>"]
+  },
+  "type": "GROUP_LEAVE_REQUEST"
+}
+```
+
+Server success response
+
+```json
+{
+  "payload": {
+  },
+  "type": "GROUP_LEAVE_SUCCESS"
+}
+```
+
+Server failure response
+
+```json
+{
+  "payload": {
+    "errors": ["<string>"]
+  },
+  "type": "GROUP_LEAVE_FAILURE"
+}
+```
+
+#### Add new member
 
 Client request
 

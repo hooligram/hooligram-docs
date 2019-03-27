@@ -10,6 +10,7 @@ Client request
 
 ```json
 {
+  "id": "<string>",
   "payload": {
     "country_code": "<string>",
     "phone_number": "<string>"
@@ -22,6 +23,7 @@ Server success response
 
 ```json
 {
+  "id": "<string>",
   "payload": {
   },
   "type": "VERIFICATION_REQUEST_CODE_SUCCESS"
@@ -32,6 +34,7 @@ Server failure response
 
 ```json
 {
+  "id": "<string>",
   "payload": {
     "errors": ["<string>"]
   },
@@ -45,6 +48,7 @@ Client request
 
 ```json
 {
+  "id": "<string>",
   "payload": {
     "verification_code": "<string>"
   },
@@ -56,6 +60,7 @@ Server success response
 
 ```json
 {
+  "id": "<string>",
   "payload": {
   },
   "type": "VERIFICATION_SUBMIT_CODE_SUCCESS"
@@ -66,6 +71,7 @@ Server failure response
 
 ```json
 {
+  "id": "<string>",
   "payload": {
     "errors": ["<string>"]
   },
@@ -81,6 +87,7 @@ Client request
 
 ```json
 {
+  "id": "<string>",
   "payload": {
     "country_code": "<string>",
     "phone_number": "<string>",
@@ -94,6 +101,7 @@ Server success response
 
 ```json
 {
+  "id": "<string>",
   "payload": {
   },
   "type": "AUTHORIZATION_SIGN_IN_SUCCESS"
@@ -102,6 +110,7 @@ Server success response
 
 ```json
 {
+  "id": "<string>",
   "payload": {
     "errors": ["<string>"]
   },
@@ -117,6 +126,7 @@ Client request
 
 ```json
 {
+  "id": "<string>",
   "payload": {
     "group_name": "<string>",
     "member_sids": ["<string>"]
@@ -129,6 +139,7 @@ Server success response
 
 ```json
 {
+  "id": "<string>",
   "payload": {
     "message_group_id": "<int>"
   },
@@ -140,6 +151,7 @@ Server failure response
 
 ```json
 {
+  "id": "<string>",
   "payload": {
     "errors": ["<string>"]
   },

@@ -286,7 +286,7 @@ Client request
   "id": "<string>",
   "payload": {
     "group_id": "<int>",
-    "message_content": "<string>"
+    "content": "<string>"
   },
   "type": "MESSAGING_SEND_REQUEST"
 }

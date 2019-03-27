@@ -265,3 +265,41 @@ Client failure response
   "type": "GROUP_DELIVER_FAILURE"
 }
 ```
+
+### Messaging
+
+#### Send message
+
+Client request
+
+```json
+{
+  "payload": {
+    "group_id": "<int>",
+    "message_content": "<string>"
+  },
+  "type": "MESSAGING_SEND_REQUEST"
+}
+```
+
+Server success response
+
+```json
+{
+  "payload": {
+    "message_id": "<int>"
+  },
+  "type": "MESSAGING_SEND_SUCCESS"
+}
+```
+
+Server failure response
+
+```json
+{
+  "payload": {
+    "errors": ["<string>"]
+  },
+  "type": "MESSAGING_SEND_FAILURE"
+}
+```

@@ -108,3 +108,41 @@ Server success response
   "type": "AUTHORIZATION_SIGN_IN_FAILURE"
 }
 ```
+
+### Message group
+
+#### Create message group
+
+Client request
+
+```json
+{
+  "payload": {
+    "group_name": "<string>",
+    "member_sids": ["<string>"]
+  },
+  "type": "GROUP_CREATE_REQUEST"
+}
+```
+
+Server success response
+
+```json
+{
+  "payload": {
+    "message_group_id": "<int>"
+  },
+  "type": "GROUP_CREATE_SUCCESS"
+}
+```
+
+Server failure response
+
+```json
+{
+  "payload": {
+    "errors": ["<string>"]
+  },
+  "type": "GROUP_CREATE_FAILURE"
+}
+```

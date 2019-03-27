@@ -227,3 +227,41 @@ Server failure response
   "type": "GROUP_ADD_MEMBER_FAILURE"
 }
 ```
+
+#### Group update
+
+Server request
+
+```json
+{
+  "payload": {
+    "date_created": "<string>",
+    "group_id": "<int>",
+    "group_name": "<string>",
+    "member_sids": ["<string>"]
+  },
+  "type": "GROUP_DELIVER_REQUEST"
+}
+```
+
+Client success response
+
+```json
+{
+  "payload": {
+    "group_id": "<int>"
+  },
+  "type": "GROUP_DELIVER_SUCCESS"
+}
+```
+
+Client failure response
+
+```json
+{
+  "payload": {
+    "errors": ["<string>"]
+  },
+  "type": "GROUP_DELIVER_FAILURE"
+}
+```

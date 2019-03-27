@@ -303,3 +303,42 @@ Server failure response
   "type": "MESSAGING_SEND_FAILURE"
 }
 ```
+
+#### Message update
+
+Server request
+
+```json
+{
+  "payload": {
+    "content": "<string>",
+    "date_created": "<string>",
+    "group_id": "<int>",
+    "message_id": "<int>",
+    "sender_sid": "<string>"
+  },
+  "type": "MESSAGING_DELIVER_REQUEST"
+}
+```
+
+Client success response
+
+```json
+{
+  "payload": {
+    "message_id": "<int>"
+  },
+  "type": "MESSAGING_DELIVER_SUCCESS"
+}
+```
+
+Client failure response
+
+```json
+{
+  "payload": {
+    "errors": ["<string>"]
+  },
+  "type": "MESSAGING_DELIVER_FAILURE"
+}
+```

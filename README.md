@@ -38,3 +38,37 @@ Server failure response
   "type": "VERIFICATION_REQUEST_CODE_FAILURE"
 }
 ```
+
+#### Code submit
+
+Client request
+
+```json
+{
+  "payload": {
+    "verification_code": "<string>"
+  },
+  "type": "VERIFICATION_SUBMIT_CODE_REQUEST"
+}
+```
+
+Server success response
+
+```json
+{
+  "payload": {
+  },
+  "type": "VERIFICATION_SUBMIT_CODE_SUCCESS"
+}
+```
+
+Server failure response
+
+```json
+{
+  "payload": {
+    "errors": ["<string>"]
+  },
+  "type": "VERIFICATION_SUBMIT_CODE_FAILURE"
+}
+```

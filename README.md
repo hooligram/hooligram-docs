@@ -204,7 +204,7 @@ Client request
 {
   "id": "<string>",
   "payload": {
-    "group_id": ["<int>"],
+    "group_id": "<int>",
     "member_sid": "<string>"
   },
   "type": "GROUP_ADD_MEMBER_REQUEST"

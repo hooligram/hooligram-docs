@@ -167,7 +167,7 @@ Client request
 {
   "id": "<string>",
   "payload": {
-    "group_id": ["<int>"]
+    "group_id": "<int>"
   },
   "type": "GROUP_LEAVE_REQUEST"
 }

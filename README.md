@@ -357,3 +357,38 @@ Client failure response
   "type": "MESSAGING_DELIVER_FAILURE"
 }
 ```
+
+### Connection
+
+Client request
+
+```json
+{
+  "id": "<string>",
+  "payload": {
+  },
+  "type": "CONN_KEEP_ALIVE_REQUEST"
+}
+```
+
+Server success response
+
+```json
+{
+  "id": "<string>",
+  "payload": {
+  },
+  "type": "CONN_KEEP_ALIVE_SUCCESS"
+}
+```
+
+Server failure response
+
+```json
+{
+  "id": "<string>",
+  "payload": {
+  },
+  "type": "CONN_KEEP_ALIVE_FAILURE"
+}
+```

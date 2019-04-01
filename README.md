@@ -276,6 +276,7 @@ Server success response
 ```json
 {
   "payload": {
+    "action_id": "<string>",
     "message_id": "<int>"
   },
   "type": "MESSAGING_SEND_SUCCESS"

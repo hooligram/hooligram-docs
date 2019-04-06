@@ -118,6 +118,7 @@ Client request
 ```json
 {
   "payload": {
+    "action_id": "<string>",
     "group_name": "<string>",
     "member_sids": ["<string>"]
   },
@@ -130,6 +131,7 @@ Server success response
 ```json
 {
   "payload": {
+    "action_id": "<string>",
     "group_id": "<int>"
   },
   "type": "GROUP_CREATE_SUCCESS"

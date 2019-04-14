@@ -128,7 +128,6 @@ Client request
 {
   "id": "<string>",
   "payload": {
-    "action_id": "<string>",
     "group_name": "<string>",
     "member_sids": ["<string>"]
   },
@@ -142,7 +141,6 @@ Server success response
 {
   "id": "<string>",
   "payload": {
-    "action_id": "<string>",
     "group_id": "<int>"
   },
   "type": "GROUP_CREATE_SUCCESS"
@@ -287,7 +285,6 @@ Client request
 {
   "id": "<string>",
   "payload": {
-    "action_id": "<string>",
     "group_id": "<int>",
     "content": "<string>"
   },
@@ -301,7 +298,6 @@ Server success response
 {
   "id": "<string>",
   "payload": {
-    "action_id": "<string>",
     "message_id": "<int>"
   },
   "type": "MESSAGING_SEND_SUCCESS"

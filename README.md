@@ -10,6 +10,7 @@ Client request
 
 ```json
 {
+  "id": "<string>",
   "payload": {
     "country_code": "<string>",
     "phone_number": "<string>"
@@ -22,6 +23,7 @@ Server success response
 
 ```json
 {
+  "id": "<string>",
   "payload": {
   },
   "type": "VERIFICATION_REQUEST_CODE_SUCCESS"
@@ -32,6 +34,7 @@ Server failure response
 
 ```json
 {
+    "id": "<string>",
   "payload": {
     "errors": ["<string>"]
   },
@@ -45,6 +48,7 @@ Client request
 
 ```json
 {
+  "id": "<string>",
   "payload": {
     "verification_code": "<string>"
   },
@@ -56,6 +60,7 @@ Server success response
 
 ```json
 {
+  "id": "<string>",
   "payload": {
   },
   "type": "VERIFICATION_SUBMIT_CODE_SUCCESS"
@@ -66,6 +71,7 @@ Server failure response
 
 ```json
 {
+  "id": "<string>",
   "payload": {
     "errors": ["<string>"]
   },
@@ -81,6 +87,7 @@ Client request
 
 ```json
 {
+  "id": "<string>",
   "payload": {
     "country_code": "<string>",
     "phone_number": "<string>",
@@ -94,6 +101,7 @@ Server success response
 
 ```json
 {
+  "id": "<string>",
   "payload": {
   },
   "type": "AUTHORIZATION_SIGN_IN_SUCCESS"
@@ -102,6 +110,7 @@ Server success response
 
 ```json
 {
+  "id": "<string>",
   "payload": {
     "errors": ["<string>"]
   },
@@ -117,6 +126,7 @@ Client request
 
 ```json
 {
+  "id": "<string>",
   "payload": {
     "action_id": "<string>",
     "group_name": "<string>",
@@ -130,6 +140,7 @@ Server success response
 
 ```json
 {
+  "id": "<string>",
   "payload": {
     "action_id": "<string>",
     "group_id": "<int>"
@@ -142,6 +153,7 @@ Server failure response
 
 ```json
 {
+  "id": "<string>",
   "payload": {
     "errors": ["<string>"]
   },
@@ -155,6 +167,7 @@ Client request
 
 ```json
 {
+  "id": "<string>",
   "payload": {
     "group_id": "<int>"
   },
@@ -166,6 +179,7 @@ Server success response
 
 ```json
 {
+  "id": "<string>",
   "payload": {
   },
   "type": "GROUP_LEAVE_SUCCESS"
@@ -176,6 +190,7 @@ Server failure response
 
 ```json
 {
+  "id": "<string>",
   "payload": {
     "errors": ["<string>"]
   },
@@ -189,6 +204,7 @@ Client request
 
 ```json
 {
+  "id": "<string>",
   "payload": {
     "group_id": "<int>",
     "member_sid": "<string>"
@@ -201,6 +217,7 @@ Server success response
 
 ```json
 {
+  "id": "<string>",
   "payload": {
   },
   "type": "GROUP_ADD_MEMBER_SUCCESS"
@@ -211,6 +228,7 @@ Server failure response
 
 ```json
 {
+  "id": "<string>",
   "payload": {
     "errors": ["<string>"]
   },
@@ -224,6 +242,7 @@ Server request
 
 ```json
 {
+  "id": "<string>",
   "payload": {
     "date_created": "<string>",
     "group_id": "<int>",
@@ -238,6 +257,7 @@ Client success response
 
 ```json
 {
+  "id": "<string>",
   "payload": {
     "group_id": "<int>"
   },
@@ -249,6 +269,7 @@ Client failure response
 
 ```json
 {
+  "id": "<string>",
   "payload": {
     "errors": ["<string>"]
   },
@@ -264,6 +285,7 @@ Client request
 
 ```json
 {
+  "id": "<string>",
   "payload": {
     "action_id": "<string>",
     "group_id": "<int>",
@@ -277,6 +299,7 @@ Server success response
 
 ```json
 {
+  "id": "<string>",
   "payload": {
     "action_id": "<string>",
     "message_id": "<int>"
@@ -289,6 +312,7 @@ Server failure response
 
 ```json
 {
+  "id": "<string>",
   "payload": {
     "errors": ["<string>"]
   },
@@ -302,6 +326,7 @@ Server request
 
 ```json
 {
+  "id": "<string>",
   "payload": {
     "content": "<string>",
     "date_created": "<string>",
@@ -317,6 +342,7 @@ Client success response
 
 ```json
 {
+  "id": "<string>",
   "payload": {
     "message_id": "<int>"
   },
@@ -328,6 +354,7 @@ Client failure response
 
 ```json
 {
+  "id": "<string>",
   "payload": {
     "errors": ["<string>"]
   },
@@ -341,6 +368,7 @@ Client request
 
 ```json
 {
+  "id": "<string>",
   "payload": {
   },
   "type": "CONN_KEEP_ALIVE_REQUEST"
@@ -351,6 +379,7 @@ Server success response
 
 ```json
 {
+  "id": "<string>",
   "payload": {
   },
   "type": "CONN_KEEP_ALIVE_SUCCESS"
@@ -361,6 +390,7 @@ Server failure response
 
 ```json
 {
+  "id": "<string>",
   "payload": {
   },
   "type": "CONN_KEEP_ALIVE_FAILURE"

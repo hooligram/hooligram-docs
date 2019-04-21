@@ -245,7 +245,7 @@ Server request
     "date_created": "<string>",
     "group_id": "<int>",
     "group_name": "<string>",
-    "is_direct_message": "<boolean>",
+    "group_type": "<int>",
     "member_sids": ["<string>"]
   },
   "type": "GROUP_DELIVER_REQUEST"
